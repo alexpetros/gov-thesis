@@ -1,0 +1,21 @@
+Discuss strengths and weaknesses with regard to technical soundness in the report. Discuss the results of running the code. Are they complete? Did the code run reliably? Was it easy to figure out how to run the code?
+
+Discuss strengths and weaknesses with regard to technical depth. Does the work go beyond the basic assignment? How? Are there particular insights about algorithms that indicate a particularly deep understanding of the problem?
+
+Discuss strengths and weaknesses with regard to presentation. Is the report structured well? Does it provide clear explanations of figures and experimental data? Are there grammatical issues that could be easily fixed?
+
+
+---
+1. Technical soundness - 3 (mistake in check_successor, misses solutions)
+2. Technical depth - 5
+3. Presentation quality - 4 (missing images and TC analysis)
+
+The search code is easy to read and well-commented. Unfortunately, the CannibalProblem implementation does not return the correct sucessors, which means that the properly-coded search methods don't return the correct solution.
+
+The problem is with the check_sucessor internal method, which incorrectly assumes that in situations where the missionaries are not all to one side, the missionaries and cannibals must have equal state counts. This is correct only for situations where the starting number of missionaries and cannibals are equal. For example, in the version of the problem where the start state is 541, the state (3, 2, 0) is valid, but this method would reject it.
+
+As a result, the program incorrectly determines that start state 541 has no solution. This is an additional small nitpick, but the DFS and IDS don't return a Solution object when no solution exists. Instead, they should return a Solution with an empty path property.
+
+On the other hand, the bidirectional search implementation is awesome! It's super cleanly written, well-commented, and as far as I can tell works properly. This is especially impressive since we only briefly covered the concept of bidrectional search in class, and the comments demonstrate a clear understanding of the implementation despite having no initial guidance.
+
+As for the report, my version of it seems to be missing an image in the introduction, but that could be a technical problem on my end. Would have been nice to have .md file though. Tiny markdown tip: use `` for names of things in code instead of italics. The report generally covers everything and demonstrates knowledge of the subject, though it's pretty light on time complexity comparison.

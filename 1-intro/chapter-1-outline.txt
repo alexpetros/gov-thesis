@@ -1,0 +1,23 @@
+General section roadmap:
+1. Hook scenario
+  * Something that happened (not 2016)
+  * What is our stated cyberpolicy?
+    - History of US cyberpolicy
+    - History of US cyberstrategy
+  * Why is the response strange?
+  * What is the US doing to respond to cyberattacks right now?
+2. Literature Reivew
+  * Lit - norms generally
+  * Lit - using law to understand cyberspace
+  * Lit - existing attempts to define the proportional response to cyberattack
+  * Academic authors tend to leave us with "this is hazy," so we need to use an analogous approach
+3. Possible approaches to answering the question
+  * Lit - how international norms evolve from domestic concerns 
+  * Lit - how norms evolved with new technologies
+  * Lit - what are the espionage norms? not much clarity
+  * Difference between espionage and sabotage
+4. Antipicated Conclusions?
+
+
+Also, some things it would be nice to have SublimeText Latex do
+* footcite snippet (pleeeasse)

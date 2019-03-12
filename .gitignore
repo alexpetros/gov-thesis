@@ -1,0 +1,14 @@
+# compiled files
+*.pdf
+*.bcf
+*.run.xml
+*.Rhistory
+
+# folders
+/Class\ Stuff
+/Extra\ Cites
+/Proposal\ Docs
+/trash
+
+# other stuff
+.DS_Store
