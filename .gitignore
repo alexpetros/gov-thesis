@@ -1,7 +1,13 @@
 # compiled files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
 *.pdf
 *.bcf
 *.run.xml
+*.synctex.gz
 *.Rhistory
 
 # folders

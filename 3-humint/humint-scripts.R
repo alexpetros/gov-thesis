@@ -24,7 +24,7 @@ spies_by_year <- clean_spies %>%
 
 decade_spies <- ggplot(data = spies_by_year) + 
   geom_bar(mapping = aes(x=year, y=count), stat = 'identity', fill='#BC271A') +
-  labs(y='Number of Americans \nrevealed spying for the USSR', x='Decade') +
+  labs(y='Alleged American Spies', x='Decade') +
   theme_few()
 
 
