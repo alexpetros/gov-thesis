@@ -5,6 +5,7 @@
 *.log
 *.out
 *.pdf
+*.sta
 *.bcf
 *.run.xml
 *.synctex.gz
