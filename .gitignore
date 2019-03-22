@@ -11,9 +11,8 @@
 *.Rhistory
 
 # folders
-/Class\ Stuff
-/Extra\ Cites
-/Proposal\ Docs
+/class
+/misc
 /trash
 
 # other stuff
