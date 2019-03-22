@@ -1,0 +1,47 @@
+\documentclass{report}
+\usepackage[subpreambles=true]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{subfiles}
+\usepackage{import}
+\usepackage{setspace}
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage[english]{babel}
+\usepackage[super]{nth}
+\usepackage{csquotes}
+\usepackage[authordate,
+			noibid,
+			refsection=chapter,
+			backend=biber]
+			{biblatex-chicago}
+\usepackage[hidelinks,
+			hyperfootnotes = false]
+			{hyperref}
+
+\doublespacing
+\setlength{\parindent}{7ex}
+\setlength{\parskip}{1em}
+\AtBeginEnvironment{quote}{\singlespacing\small\interlinepenalty=10000}
+
+\title{Reciprocal Tolerance: How Cold War Espionage Norms Can Explain US Cyber Policy Today}
+\author{Alexander W. Petros}
+\date{April 2019}
+
+\addbibresource{thesis.bib}
+
+\begin{document}
+
+    \maketitle
+
+    \chapter{Introduction}
+    \import{1-intro/}{chapter-1}
+
+    \chapter{Aerial Reconnaissance}
+    \import{2-reconnaissance/}{chapter-2}
+
+    \chapter{Human Intelligence}
+    \import{3-humint/}{chapter-3}
+
+\end{document}
+

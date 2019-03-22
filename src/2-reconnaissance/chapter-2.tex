@@ -1,12 +1,9 @@
-\documentclass[12pt]{article}
-\title{Chapter 2 --- Aerial Reconnaissance}
+\documentclass{report}
+% \title{Chapter 2 --- Aerial Reconnaissance}
 % Inventing the spy plane
-\date{}
-\author{}
 
 % need it in .docx form? no problem!
 % pandoc -s chapter-2.tex -o chapter-2.docx --bibliography="chapter-2.bib"; mv chapter-2.docx ~/Desktop
-
 \usepackage{setspace}
 \usepackage{graphicx}
 \usepackage{makecell}
@@ -29,10 +26,10 @@
 \setlength{\parskip}{1em}
 \AtBeginEnvironment{quote}{\singlespacing\small\interlinepenalty=10000}
 
-\addbibresource{chapter-2.bib}
+% \addbibresource{chapter-2.bib}
 
 \begin{document}
-\maketitle
+\begin{refsegment}
 % \section{The norm against issue linkage}
 % Assume for a moment that you have been convinced that our policy response to cybersecurity incidents is guided by espionage norms. Why is that interesting?
 
@@ -177,7 +174,7 @@ Very briefly, here are the next few peacetime reconnaissance shoowdowns whose di
 
 In another incident on July 29, 1953, a B-50 (certified reconnaissance flight) was shot down over the Sea of Japan. The United States protested, and the Soviets counter-protested an alleged American shootdown of a Soviet passenger plane. Despite press outrage, no further action was taken.\footcite[p.~47]{farquhar_aerial_2015} A September 4, 1954 shootdown of a Navy P2V Neptune actually got a Republican senator to call for breaking off diplomatic ties with the Soviet Union, decrying the continued use of diplomatic notes that had clearly proved ineffective. Instead Eisenhower brought it to the UN, with the full knowledge that an unfavorable decision would be vetoed by the Soviets anyhow. Although the move was entirely symbolic, it signaled Eisenhower's ability to resist the calls for harsher action while still placating the American public.\footcite[p.~47]{farquhar_aerial_2015}
 
-I do not wish to belabor the point, so suffice to say that Farquhar's conclusion is that after this moment in 1954, the resolution of these incidents became less tense. ``International incidents posed by shoot downs of reconnaissance aircraft still acted as a barrier in the path of détente; but, by late 1954, overriding strategic concerns dictated a move toward breaking the cycle of hostility.''\footcite[p.~49]{farquhar_aerial_2015} In terms of media coverage, and diplomatic significance, no shootdown that followed would require more significant consequences than the ones that had already happened.
+I do not wish to belabor the point, so suffice to say that Farquhar's conclusion is that after this moment in 1954, the resolution of these incidents became less tense. ``International incidents posed by shoot downs of reconnaissance aircraft still acted as a barrier in the path of d\'etente; but, by late 1954, overriding strategic concerns dictated a move toward breaking the cycle of hostility.''\footcite[p.~49]{farquhar_aerial_2015} In terms of media coverage, and diplomatic significance, no shootdown that followed would require more significant consequences than the ones that had already happened.
 
 There is a single incident from 1950-1954 that does not line up with the pattern. On November 20, 1951, an American C-47 transport that was forced down in Hungary. This incident is omitted from Peterson's list because, despite Soviet cries of ``spies and saboteurs,'' it wasn't actually a spy flight.\footnote{It also wasn't exactly shot down so much as forced to land.} Of all the cases that Farquhar examines, this is the only one that provokes a sustained diplomatic response---and it is the only one that definitively carried no espionage equipment. While the ferret flights were perfectly calibrated to fit as much radio surveillance equipment as possible, the only evidence of espionage that the Soviets were able to produce from the C-47---a plane that they recovered intact---was a portable radio, two extra parachutes, and some packets of warm blankets.\footcite{the_united_press_soviet_1951}
 
@@ -272,4 +269,5 @@ Aerial reconnaissance is but one form of espionage, and at this stage many of th
 \newpage
 \printbibliography
 
+\end{refsegment}
 \end{document}
