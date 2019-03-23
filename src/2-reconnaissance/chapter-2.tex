@@ -2,28 +2,9 @@
 
 % need it in .docx form? no problem!
 % pandoc -s chapter-2.tex -o chapter-2.docx --bibliography="chapter-2.bib"; mv chapter-2.docx ~/Desktop
-\usepackage{setspace}
-\usepackage{graphicx}
-\usepackage{makecell}
-\usepackage[margin=1in]{geometry}
-\usepackage[english]{babel}
-\usepackage[super]{nth}
-\usepackage{csquotes}
-\usepackage[authordate,
-			noibid,
-			backend=biber]
-			{biblatex-chicago}
 
-\usepackage[hidelinks,
-			hyperfootnotes = false]
-			{hyperref}
-
-% text formatting
-\doublespacing
-\setlength{\parindent}{7ex}
-\setlength{\parskip}{1em}
-\AtBeginEnvironment{quote}{\singlespacing\small\interlinepenalty=10000}
-
+\usepackage{import}
+\import{../}{gov-style}
 % \addbibresource{chapter-2.bib}
 
 \begin{document}
@@ -266,7 +247,7 @@ Aerial reconnaissance is but one form of espionage, and at this stage many of th
 
 
 \newpage
-\printbibliography
+\printbibliography[heading=subbibliography]
 
 \end{refsegment}
 \end{document}

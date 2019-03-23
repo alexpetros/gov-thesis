@@ -1,0 +1,37 @@
+% \ProvidesPackage{gov-style}
+
+% chicago style biliography
+\usepackage[english]{babel}
+\usepackage[authordate,
+            noibid,
+            refsection=chapter,
+            backend=biber]
+            {biblatex-chicago}
+
+% structure and link
+\usepackage[hidelinks,
+            hyperfootnotes = false]
+            {hyperref}
+
+% image and table packages
+\usepackage{multicol}
+\usepackage{longtable}
+\usepackage{makecell}
+\usepackage{csvsimple}
+\usepackage{graphicx}
+\usepackage{etoolbox}
+\usepackage{tikz}
+
+% paragraph formatting
+\usepackage{setspace}
+\doublespacing
+\setlength{\parindent}{7ex}
+\setlength{\parskip}{1em}
+
+% image formatting
+\usepackage[margin=1in]{geometry}
+
+% text entry commands
+\usepackage[super]{nth}
+\usepackage{csquotes}
+\AtBeginEnvironment{quote}{\singlespacing\small\interlinepenalty=10000}

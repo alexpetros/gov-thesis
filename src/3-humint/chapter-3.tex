@@ -1,38 +1,15 @@
 \documentclass{report}
-% Inventing the spy plane
 
 % need it in .docx form? no problem!
 % pandoc -s chapter-3.tex -o chapter-3.docx --bibliography="chapter-3.bib"; mv chapter-3.docx ~/Desktop
 
-\usepackage{setspace}
-\usepackage[margin=1in]{geometry}
-\usepackage[english]{babel}
-\usepackage[super]{nth}
-\usepackage{csquotes}
-\usepackage[authordate,
-			noibid,
-			backend=biber]
-			{biblatex-chicago}
-\usepackage[hidelinks,
-			hyperfootnotes = false]
-			{hyperref}
-\usepackage{graphicx}
-\usepackage{multicol}
-\usepackage{longtable}
-\usepackage{makecell}
-\usepackage{csvsimple}
-\usepackage{tikz}
-
-% text formatting
-\doublespacing
-\setlength{\parindent}{7ex}
-\setlength{\parskip}{1em}
-\AtBeginEnvironment{quote}{\singlespacing\small\interlinepenalty=10000}
-
+\usepackage{import}
+\import{../}{gov-style}
 % \addbibresource{chapter-3.bib}
 
 \begin{document}
 \begin{refsegment}
+
 \section*{Thesis so far}
 \begin{em}
 In this thesis, I seek to understand why nation-states (and the United States in particular) have not responded more harshly to cyber-espionage and whether that is likely to change. While the US acts diligently to prevent digital invasions, the punishment it inflicts on states for hacking into its computer networks and attempting to steal state secrets seems mild in comparison to the damage done. I theorize that this puzzling response to cyber-attacks can be explained by espionage norms that formed during the Cold War---norms that suggest a state will never extend the diplomatic consequences of an espionage attempt beyond the countermeasures necessary to prevent it. To make this connection, I will demonstrate the various forms in which this norm existed during the Cold War, then analyze how it influences our cybersecurity policy today.
@@ -298,7 +275,7 @@ Robert Patrick Hoffman (2012)
 
 
 \newpage
-\printbibliography
+\printbibliography[heading=subbibliography]
 
 \end{refsegment}
 1\end{document}

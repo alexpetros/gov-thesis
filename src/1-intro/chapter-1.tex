@@ -2,29 +2,10 @@
 
 % need it in .docx form? no problem!
 % pandoc -s chapter-1.tex -o chapter-1.docx --bibliography="chapter-1.bib"; mv chapter-1.docx ~/Desktop
-\usepackage{setspace}
-\usepackage{etoolbox}
-\usepackage{graphicx}
-\usepackage[margin=1in]{geometry}
-\usepackage[english]{babel}
-\usepackage[super]{nth}
-\usepackage{csquotes}
-\usepackage[authordate,
-			noibid,
-			backend=biber]
-			{biblatex-chicago}
 
-\usepackage[hidelinks,
-			hyperfootnotes = false]
-			{hyperref}
-% text formatting
-\doublespacing
-\setlength{\parindent}{7ex}
-\setlength{\parskip}{1em}
-\AtBeginEnvironment{quote}{\singlespacing\small\interlinepenalty=10000}
-
+\usepackage{import}
+\import{../}{gov-style}
 % \addbibresource{chapter-1.bib}
-
 
 \begin{document}
 \begin{refsegment}
@@ -166,7 +147,7 @@ There is another interesting contemporary source for espionage norms as well. Wh
 This following section will be to analyze the major cyber attacks that the United States has publicly responded to in the context of traditional espionage norms. There isn't much to say about this until the first part is done. While I'm cognizant of the possibility that espionage norms won't prove to be especially relevant to to cybersecurity norms today, I have seen enough reference to them in the cybersecurity literature and from US officials that I am optimistic that the connection will hold.
 
 \newpage
-\printbibliography
+\printbibliography[heading=subbibliography]
 
 \end{refsegment}
 \end{document}
