@@ -1,6 +1,8 @@
+% uncomment this when you figure out how styles can be imported for parent dirs
 % \ProvidesPackage{gov-style}
 
 % chicago style biliography
+% try to get ibids back
 \usepackage[english]{babel}
 \usepackage[authordate,
             noibid,
@@ -27,6 +29,10 @@
 \doublespacing
 \setlength{\parindent}{7ex}
 \setlength{\parskip}{1em}
+
+% table of contents formatting
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{1}
 
 % image formatting
 \usepackage[margin=1in]{geometry}
