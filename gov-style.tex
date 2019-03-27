@@ -2,11 +2,9 @@
 % \ProvidesPackage{gov-style}
 
 % chicago style biliography
-% try to get ibids back
 \usepackage[english]{babel}
 \usepackage[authordate,
-            noibid,
-            refsection=chapter,
+      			refsection=chapter,
             backend=biber]
             {biblatex-chicago}
 
@@ -41,3 +39,25 @@
 \usepackage[super]{nth}
 \usepackage{csquotes}
 \AtBeginEnvironment{quote}{\singlespacing\small\interlinepenalty=10000}
+
+
+% change how ibid works in biblatex-chicago
+% https://tex.stackexchange.com/questions/250923/turn-off-omitting-of-repeated-authors
+\makeatletter
+\renewbibmacro*{cite:ibid}{%
+  \iftoggle{cms@noibid}%
+  {\blx@ibidreset%
+    \usebibmacro{cite}}%
+  {\iffootnote
+     {\printtext[bibhyperref]{%
+        \bibstring[\mkibid]{ibidem}}}
+     {\ifthenelse{\iffieldundef{prenote}\AND%
+                  \iffieldundef{postnote}}%
+        {\blx@ibidreset%
+         \usebibmacro{cite}%
+         \PackageWarning{biblatex-chicago}%
+           {Empty Ibidem citation}}%
+        {\toggletrue{cms@inlineibid}}}}}
+\makeatother
+
+
