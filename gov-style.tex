@@ -38,7 +38,8 @@
 % text entry commands
 \usepackage[super]{nth}
 \usepackage{csquotes}
-\AtBeginEnvironment{quote}{\singlespacing\small\interlinepenalty=10000}
+\AtBeginEnvironment{quote}{\singlespacing\small\vspace{-\topsep}}
+% \AtEndEnvironment{quote}{\vspace{-\topsep}\endsinglespace}
 
 
 % change how ibid works in biblatex-chicago
