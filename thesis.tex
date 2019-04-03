@@ -2,9 +2,6 @@
 \usepackage[subpreambles=true]{standalone}
 \usepackage{import}
 
-% need it in .docx form? no problem!
-% pandoc -s thesis.tex -o petros_thesis.docx --bibliography="thesis.bib"; mv petros_thesis.docx ~/Desktop
-
 \title{Reciprocal Tolerance: How Cold War Espionage Norms Can Explain US Cyber Policy Today}
 \author{Alexander W. Petros}
 \date{April 2019}
@@ -23,10 +20,13 @@
 
     \chapter{Aerial Reconnaissance}
     % Inventing the Spy Plane
-    \import{3-reconnaissance/}{chapter-3}
+    \import{3-reconnaissance/}{3-reconnaissance}
 
     \chapter{Human Intelligence}
-    \import{4-humint/}{chapter-4}
+    \import{4-espionage/}{4-espionage}
+
+    \chapter{Satellite Reconnaissance}
+    \import{5-satellites/}{5-satellites}
 
 \end{document}
 
