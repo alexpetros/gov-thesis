@@ -11,6 +11,8 @@
 *.run.xml
 *.synctex.gz
 *.Rhistory
+*.fdb_latexmk
+*.fls
 
 # folders
 /class
