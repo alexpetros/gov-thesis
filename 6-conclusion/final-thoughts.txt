@@ -1,3 +1,38 @@
-The current norm is good for the United States, and the should preserve it
+Here is what you should take away from the thesis:
+    - states refrain from punishing each other for attempting espionage in order to preserve the practice
+    - for new technological advancements, the United States made concerted efforts to have those norms apply
+    - even though reciprocal capabilities were not always immediately available, the USSR esentially went along
+    - them
+
+Can I say that the norm is a net good?
+
+
+* introduction
+    - we know that there is a norm around reducing the response, especially when you consider how much harm was done
+    - we know how that norm was deployed in the case of new technologies
+    - we know that it's actively promoted
+
+* so WHY does that norm exist?
+    - what are policymakers relying on when they promote the norm? why do have faith that it's a thing they can encourage?
+    - defensive realism
+    - civilian intelligence vs military intelligence
+    - bias towards knowing more
+    - in the nuclear age, premium on reducing miscalculation
+
+* when does the norm work, and when does it fail?
+    - mutual technological capabilities (or close to it)
+    - information-only
+    - do not abuse the dual-use
+
+* how it does or does not apply to cyber today
+    - make the case that it's connected
+    - then talk about what we can learn
+    - there probably should have been more stuxnets
+
+* US should promote a "don't militarize space norm"
 The norm is more precarious than it might seem, things that threaten it
-The norm protects dual-use technologies
+
+
+* defensive realism... but what if the United States is not defensive?
+    - decapitating strike?
+    - then the hypothetical where it is
