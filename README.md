@@ -4,13 +4,15 @@ Hi! This my thesis for the Dartmouth Government department. This project contain
 
 ## Build Instructions
 ### Requirements
-* A TeX installation 
-* latexmk (likely comes with your TeX installation)
+You need a TeX installation with pdflatex, biber, and latexmk. If you've ever built a TeX file locally, you almost certainly have all of these. 
+
+If you don't have one, search around. For OSX, `brew cask install mactex` will get you everything you need. Don't install the version with a GUI, because that doesn't include latexmk for some reason.
 
 ### Commands
 * `make` builds the thesis and outputs a `thesis.pdf` file in the top directory
 * `make open` builds the thesis and then opens the pdf for you in your preferred reader
-* `make clean` removes all the artifact files. Note that right now it will not remove the build artifacts if you built a chapter as a standalone
+* `make clean` removes all the artifact files from a top-level build.  
+* `latexmk -C` in a subdirectory will clean up a build there if you built a single chapter. Will try to add this to the makefile later
 
 ## Notes
 ### Technical problems
@@ -19,9 +21,17 @@ I couldn't get the `standalone` package to work perfectly, so if you would like 
 If you get an error that says `../thesis.bib` can't be found, that means you didn't comment out one of the bibliography imports in a subfile. 
 
 ### To-do
-* Finish conclusion 
-* Move HUMINT chapter to the front, finish with some damaging examples
-    - include game theory
-* Introduction needs more damaging examples, convincing puzzle 
-* Khrushchev books and Farquhar book 
-* A few more graphics 
+* Introduction
+    - more damaging examples (really sell the puzzle)
+    - research design 
+* Espionage
+    - game theory
+    - add a few damaging examples
+* Planes
+    - Cuban missile example
+    - Farquhar on satellites
+* Satellites
+    - add Khrushchev on satellites 
+* Conclusion 
+    - finish it 
+* A few more graphics!
