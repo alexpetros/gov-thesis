@@ -6,7 +6,9 @@ Hi! This my thesis for the Dartmouth Government department. This project contain
 ### Requirements
 You need a TeX installation with pdflatex, biber, and latexmk. If you've ever built a TeX file locally, you almost certainly have all of these. 
 
-If you don't have one, search around. For OSX, `brew cask install mactex` will get you everything you need. Don't install the version with a GUI, because that doesn't include latexmk for some reason.
+If you don't have one, search around. For OSX, `brew cask install mactex` will install everything you need. 
+
+Even though you shouldn't need the GUI, don't install `mactex-no-gui`, because that doesn't include latexmk for some reason.
 
 ### Commands
 * `make` builds the thesis and outputs a `thesis.pdf` file in the top directory
@@ -23,13 +25,14 @@ If you get an error that says `../thesis.bib` can't be found, that means you did
 ### To-do
 * Introduction
     - more damaging examples (really sell the puzzle)
+    - literature review needs to be better
     - research design 
 * Espionage
     - game theory
     - add a few damaging examples
 * Planes
     - Cuban missile example
-    - Farquhar on satellites
+    - Farquhar on planes
 * Satellites
     - add Khrushchev on satellites 
 * Conclusion 

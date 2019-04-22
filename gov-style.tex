@@ -5,8 +5,12 @@
 \usepackage[english]{babel}
 \usepackage[authordate,
       			refsection=chapter,
-            backend=biber]
+            backend=biber,
+            isbn=false,
+            doi=false]
             {biblatex-chicago}
+% remove language field
+\AtEveryBibitem{\clearlist{language}}
 
 % structure and link
 \usepackage[hidelinks,
