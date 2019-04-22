@@ -11,6 +11,7 @@
             {biblatex-chicago}
 % remove language field
 \AtEveryBibitem{\clearlist{language}}
+\footmarkstyle{#1.\,}
 
 % structure and link
 \usepackage[hidelinks,
@@ -27,15 +28,10 @@
 \usepackage{tikz}
 
 % paragraph formatting
-\usepackage{setspace}
-\doublespacing
+% \usepackage{setspace}
+\DoubleSpacing
 \setlength{\parindent}{7ex}
 \setlength{\parskip}{1em}
-
-% epigraph formatting
-\usepackage{epigraph}
-% \newenvironment{epigraphstyle}{\linespread{1}}{}
-% \renewcommand{\textflush}{epigraphstyle}
 
 % table of contents formatting
 \setcounter{tocdepth}{1}
@@ -47,7 +43,7 @@
 % text entry commands
 \usepackage[super]{nth}
 \usepackage{csquotes}
-\AtBeginEnvironment{quote}{\singlespacing\small\vspace{-\topsep}}
+\AtBeginEnvironment{quote}{\SingleSpacing\small\vspace{-\topsep}}
 % \AtEndEnvironment{quote}{\vspace{-\topsep}\endsinglespace}
 
 

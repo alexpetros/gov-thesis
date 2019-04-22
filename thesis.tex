@@ -1,4 +1,4 @@
-\documentclass{report}
+\documentclass{memoir}
 \usepackage{standalone}
 \usepackage{import}
 
@@ -11,13 +11,14 @@
 
 \begin{document}
 
-    \maketitle
-    \pagenumbering{roman}
+    \frontmatter
+    \import{./}{title-page.tex}
+
     \tableofcontents
     \newpage
-    \pagenumbering{arabic}
 
 
+    \mainmatter
     \chapter{Introduction}
     \import{1-introduction/}{introduction}
 
