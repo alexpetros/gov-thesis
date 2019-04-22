@@ -16,6 +16,11 @@ Even though you shouldn't need the GUI, don't install `mactex-no-gui`, because t
 * `make clean` removes all the artifact files from a top-level build.  
 * `latexmk -C` in a subdirectory will clean up a build there if you built a single chapter. Will try to add this to the makefile later
 
+### Bibliography connections
+I used the excellent LaTeXTools package for Sublime to write the entirety of this thesis, and Zotero's BetterBibLaTeX to create the `.bib` file.
+
+In order to properly connect the two, you need to switch the LaTeXTools `biblography` preference from `"traditional"` to `"new"`. This changes the parser to one that is capable of reading the preferred BibLaTeX date format.
+
 ## Notes
 ### Technical problems
 I couldn't get the `standalone` package to work perfectly, so if you would like to build an individual chapter, uncomment its bibliography and build it with LaTeXTools. I will try to automate this process with the makefile in the future.
