@@ -44,5 +44,6 @@ $(NAME).pdf: $(NAME).tex
 open: $(NAME).pdf
 	open $(NAME).pdf
 
+# add -bibtex if you want to clean bibtexw
 clean:
-	latexmk -C -bibtex
+	latexmk -C
