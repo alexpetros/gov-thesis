@@ -29,9 +29,7 @@ If you get an error that says `../thesis.bib` can't be found, that means you did
 
 ### To-do
 * Introduction
-    - more damaging examples (really sell the puzzle)
     - literature review needs to be better
-    - research design 
 * Espionage
     - game theory
     - add a few damaging examples
