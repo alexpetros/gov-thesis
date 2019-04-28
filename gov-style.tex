@@ -35,7 +35,7 @@
 \setlength\epigraphrule{0pt}
 
 % paragraph formatting
-% \usepackage{setspace}
+% if you switch off of memoir, then add setspace and change spacing commands
 \DoubleSpacing
 \setlength{\parindent}{7ex}
 \setlength{\parskip}{1em}
@@ -51,7 +51,12 @@
 \usepackage[super]{nth}
 \usepackage{csquotes}
 \AtBeginEnvironment{quote}{\SingleSpacing\small\vspace{-\topsep}}
-% \AtEndEnvironment{quote}{\vspace{-\topsep}\endsinglespace}
+
+% LaTeX figure numbering bug?
+% https://tex.stackexchange.com/questions/427451/dot-between-chapter-number-and-figure-number-disapear-after-update
+\makeatletter
+\renewcommand{\counterwithin}{\@ifstar{\@csinstar}{\@csin}}
+\makeatother
 
 
 % change how ibid works in biblatex-chicago
