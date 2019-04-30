@@ -28,16 +28,18 @@ I couldn't get the `standalone` package to work perfectly, so if you would like 
 If you get an error that says `../thesis.bib` can't be found, that means you didn't comment out one of the bibliography imports in a subfile. 
 
 ### To-do
+* Front matter
+    - Acknowledgments 
 * Introduction
     - literature review needs to be better
 * Espionage
-    - game theory
     - add a few damaging examples
 * Planes
-    - Cuban missile example
     - Farquhar on planes
 * Satellites
     - add Khrushchev on satellites 
 * Conclusion 
     - finish it 
-* A few more graphics!
+* Style
+    - A few more graphics!
+    - Font (diff for header and body)
