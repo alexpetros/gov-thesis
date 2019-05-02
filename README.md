@@ -30,16 +30,16 @@ If you get an error that says `../thesis.bib` can't be found, that means you did
 ### To-do
 * Front matter
     - Acknowledgments 
-* Introduction
-    - literature review needs to be better
+    - Abstract
 * Espionage
     - add a few damaging examples
 * Planes
     - Farquhar on planes
+    - quote
 * Satellites
     - add Khrushchev on satellites 
 * Conclusion 
     - finish it 
+    - quote
 * Style
-    - A few more graphics!
     - Font (diff for header and body)
