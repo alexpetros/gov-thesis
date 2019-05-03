@@ -29,6 +29,16 @@
 \usepackage{etoolbox}
 \usepackage{tikz}
 
+% chapter and section formatting
+% \chapterstyle{ger}
+\setsecheadstyle{\Large\bfseries\sffamily}
+\setsubsecheadstyle{\large\bfseries\sffamily}
+\makeatletter
+\g@addto@macro\chapnamefont{\sffamily}
+\g@addto@macro\chapnumfont{\sffamily}
+\g@addto@macro\chaptitlefont{\sffamily}
+\makeatother
+
 % epigraph formatting
 % https://tex.stackexchange.com/questions/53377/inspirational-quote-at-start-of-chapter
 \epigraphfontsize{\small\itshape\SingleSpacing}
@@ -52,6 +62,7 @@
 \usepackage[super]{nth}
 \usepackage{csquotes}
 \AtBeginEnvironment{quote}{\SingleSpacing\small\vspace{-\topsep}}
+\newenvironment{noparindent}{\setlength{\parindent}{0cm}}{}
 
 % LaTeX figure numbering bug?
 % https://tex.stackexchange.com/questions/427451/dot-between-chapter-number-and-figure-number-disapear-after-update
