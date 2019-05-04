@@ -31,8 +31,8 @@
 
 % chapter and section formatting
 % \chapterstyle{ger}
-\setsecheadstyle{\Large\bfseries\sffamily}
-\setsubsecheadstyle{\large\bfseries\sffamily}
+\setsecheadstyle{\LARGE\bfseries\sffamily}
+\setsubsecheadstyle{\Large\bfseries\sffamily}
 \makeatletter
 \g@addto@macro\chapnamefont{\sffamily}
 \g@addto@macro\chapnumfont{\sffamily}
@@ -41,8 +41,8 @@
 
 % epigraph formatting
 % https://tex.stackexchange.com/questions/53377/inspirational-quote-at-start-of-chapter
-\epigraphfontsize{\small\itshape\SingleSpacing}
-\setlength\epigraphwidth{8cm}
+\epigraphfontsize{\itshape\SingleSpacing}
+\setlength\epigraphwidth{10cm}
 \setlength\epigraphrule{0pt}
 
 % paragraph formatting
@@ -61,7 +61,7 @@
 % text entry commands
 \usepackage[super]{nth}
 \usepackage{csquotes}
-\AtBeginEnvironment{quote}{\SingleSpacing\small\vspace{-\topsep}}
+\AtBeginEnvironment{quote}{\SingleSpacing\vspace{-\topsep}}
 \newenvironment{noparindent}{\setlength{\parindent}{0cm}}{}
 
 % LaTeX figure numbering bug?
