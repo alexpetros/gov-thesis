@@ -34,14 +34,15 @@ country_sats_chart <- ggplot(data = country_sats) +
   geom_col(mapping = aes(x = operator_country, y = num, fill = cat), position = 'dodge') +
   scale_fill_brewer(type = 'div', palette = 5, direction = -1) +
   theme_few() +
-  theme(legend.position = 'bottom') +
+  theme(legend.position = 'bottom', legend.spacing.x = unit(1, 'cm')) +
   labs(x = '', y = 'Number of satellites in operation', 
        title = 'Space is crowded', subtitle = 'Active satellites in orbit (December 1, 2018)') +
   guides(fill = guide_legend(title = ''))
-
+country_sats_chart
 
 if (SAVE_OUTPUT) {
   tikz('country_sats.tex',width=5.5, height=5)
   country_sats_chart
   dev.off()
 }
+
