@@ -13,6 +13,7 @@
 % remove language field
 \AtEveryBibitem{\clearlist{language}}
 \footmarkstyle{#1.\,}
+\renewcommand{\bibfont}{\SingleSpacing}
 
 % structure and link
 \usepackage[hidelinks,
@@ -61,7 +62,7 @@
 % text entry commands
 \usepackage[super]{nth}
 \usepackage{csquotes}
-\AtBeginEnvironment{quote}{\SingleSpacing\vspace{-\topsep}}
+\AtBeginEnvironment{quote}{\small\SingleSpacing\vspace{-\topsep}}
 \newenvironment{noparindent}{\setlength{\parindent}{0cm}}{}
 
 % LaTeX figure numbering bug?
