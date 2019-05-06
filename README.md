@@ -28,10 +28,4 @@ I couldn't get the `standalone` package to work perfectly, so if you would like 
 If you get an error that says `../thesis.bib` can't be found, that means you didn't comment out one of the bibliography imports in a subfile. 
 
 ### To-do
-* Front matter
-    - Acknowledgments 
-    - Abstract
-* Espionage
-    - add a few damaging examples
-* Style
-    - Font (diff for header and body)
+* Nothing!
